@@ -1,3 +1,38 @@
 html {
     scroll-behavior: smooth;
 }
+/*Estilos para la sección de los videos*/
+.videos {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+}
+.about-the-x {
+  align-items: center;
+  align-content: center;
+}
+.about-the-x h2 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.video-container {
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+  background-color: #000;
+}
+#video_about-the-product {
+  position: flex;
+  margin: 0;
+  padding: 0;
+  bottom: 16px;
+  right: 16px;
+  border: none;
+  width: fit-content;
+  height: auto;
+  z-index: 9999999999999;
+}
