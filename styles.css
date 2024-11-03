@@ -1,6 +1,7 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 /*Estilos para la sección de los videos*/
 .videos {
   background-color: #f9f9f9;
@@ -9,30 +10,39 @@ html {
   align-items: center;
   padding: 20px 0px;
 }
+
 .about-the-x {
   align-items: center;
   align-content: center;
 }
+
 .about-the-x h2 {
   font-size: 1.5rem;
   color: #000;
   margin-bottom: 10px;
   text-align: center;
 }
+
 .video-container {
   position: relative;
-  width: fit-content;
+  /*usar width para el tamaño del video
+  el height está el automático para mantener la relación de aspecto*/
+  width: 500px;
+  height: auto;
+  /*usar aspect-ratio para modificar la relación de aspecto del video
+  así como 16:9, 16:10, 4:3, etc*/
+  aspect-ratio: 16/9;
   overflow: hidden;
   background-color: #000;
 }
-#video_about-the-product {
-  position: flex;
+/*a pesar que le puse un id a cada video, mejor lo manipulé de esta forma
+y dejándolo tal como está, funcionó (se ve como se esperaba)*/
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  bottom: 16px;
-  right: 16px;
-  border: none;
-  width: fit-content;
-  height: auto;
-  z-index: 9999999999999;
+  width: 100%;
+  height: 100%;
 }
